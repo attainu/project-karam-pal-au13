@@ -55,7 +55,7 @@ if __name__ == "__main__":
     alldrivers = pilot.getDriverslist()
     allriders = sawari.historyofrides()
 
-    print("If you want to Book a Cab type <bookme>:   ")
+    print("If you want to Book a Cab type <modi>:   ")
 
     # to take the rider input
     entry = input("Provide Your Input here:::   ")
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     if entry == "check":  # for list data of drivers
         print(alldrivers, allriders)
 
-    if entry == "bookme":  # to know if the rider wants to book or not
+    if entry == "modi":  # to know if the rider wants to book or not
         print(" THANKS!!   For Booking with us , Please enter your the location you want to go:")
         d1 = int(input("please enter x Coordinate:  "))
         d2 = int(input("please enter y Coordinate:  "))
@@ -79,8 +79,8 @@ if __name__ == "__main__":
             if d < distanceArr:
                 distanceArr = d
                 assigned_Cab = alldrivers[i]
-        print(" as he is close so ", assigned_Cab,
-              "will reach your location shortly to pick you up ")
+        print(" as this driver is close so ", assigned_Cab,
+              "will reach your location   shortly to pick you up ")
         print("have a safe journey!!")
 
         # code for calculating the cost of trip
@@ -94,15 +94,15 @@ if __name__ == "__main__":
     while True:  # for implement function infinite times
         # prints are for information for next steps
 
-        print("If you want to see the list of all Drivers and Riders type <check>:   ")
+        print("If you want to see the history of all your Rides type <check>:   ")
         print("If you want exit Write <EXIT>:   ")
-        print("If you want to Book a Cab type <bookme>:   ")
+    
 
         # to take the rider input
         entry = input("Provide Your Input here:::   ")
 
         if entry == "check":  # for list data of drivers
-            print(alldrivers, allriders)
+            print(allriders)
 
         if entry == "EXIT":  # for exit we using this function
             print("hope you had a pleasant journey, visit again!!")
