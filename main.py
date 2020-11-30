@@ -35,13 +35,16 @@ if __name__ == "__main__":
 
     # taking and storing information from rider for booking
 
-    name = input("Type Your Name Here:   ")
+    name = input("Type Your Name Here(rider):   ")
 
     location = input("Whats is your city:   ")
 
     phone_no = input("Your Mobile Number Please:   ")
 
     booking = input("Type <yes> if you want to book a ride:  ")
+
+    if available == "no":
+        print("sorry driver is not avaialble for booking")
 
     y1 = int(input("Type your x Cordinate:  "))
 
